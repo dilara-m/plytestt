@@ -23,13 +23,13 @@ export default function Navigation() {
   };
 
   return (
-    <nav className="bg-white shadow-sm border-b border-gray-100 sticky top-0 z-50">
+    <nav className="bg-background border-b border-border sticky top-0 z-50 backdrop-blur-sm bg-background/95">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <Layers3 className="text-primary text-2xl mr-3" />
-              <span className="text-xl font-bold text-neutral-dark">Ply</span>
+              <span className="text-xl font-bold text-foreground">Ply</span>
             </div>
           </div>
           
@@ -39,7 +39,7 @@ export default function Navigation() {
                 <button
                   key={item.href}
                   onClick={() => handleNavClick(item.href)}
-                  className="text-gray-600 hover:text-primary transition-colors"
+                  className="text-muted-foreground hover:text-primary transition-colors"
                 >
                   {item.label}
                 </button>
@@ -48,10 +48,10 @@ export default function Navigation() {
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Button variant="ghost" className="text-gray-600 hover:text-primary">
+            <Button variant="ghost" className="text-muted-foreground hover:text-primary">
               Sign In
             </Button>
-            <Button className="bg-primary text-white hover:bg-primary/90">
+            <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
               Start Building
             </Button>
           </div>
