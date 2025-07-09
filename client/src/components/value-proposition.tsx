@@ -38,10 +38,10 @@ export default function ValueProposition() {
       subtitle: "Global audience, no platform barriers",
       description: "In our vision, creators aren't limited by platforms or borders. Access a global audience and backer pool with extended visibility across all platforms.",
       features: [
-        "Global audience and backer pool access",
-        "Cross-platform visibility and reach",
-        "Platforms become curators, not gatekeepers",
-        "Reputation system across all platforms"
+        "Embed campaigns in Discord servers and communities",
+        "Launch crowdfunding directly in Telegram channels",
+        "Integrate with existing Shopify stores seamlessly",
+        "Reach streaming audiences with live funding bots"
       ],
       gradient: "from-purple-50 to-pink-100",
       iconColor: "text-purple-600",
