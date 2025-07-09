@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { 
   Building2, 
   Users, 
@@ -90,7 +91,7 @@ export default function ValueProposition() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-br from-neutral-light to-white">
+    <section className="py-20 bg-gradient-to-br from-muted/30 to-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -99,10 +100,10 @@ export default function ValueProposition() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Built for Everyone in the Ecosystem
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Ply creates value for platforms, creators, and backers by removing barriers and enabling global collaboration.
           </p>
         </motion.div>
@@ -129,9 +130,9 @@ export default function ValueProposition() {
                 </div>
               </div>
               
-              <p className="text-gray-600 mb-6">{stakeholder.description}</p>
+              <p className="text-muted-foreground mb-6">{stakeholder.description}</p>
               
-              <ul className="text-sm text-gray-700 space-y-3">
+              <ul className="text-sm text-muted-foreground space-y-3">
                 {stakeholder.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-start">
                     <Check className="w-4 h-4 text-green-500 mr-2 mt-0.5 flex-shrink-0" />
@@ -163,9 +164,26 @@ export default function ValueProposition() {
                 <feature.icon className="w-8 h-8 text-primary" />
               </div>
               <h4 className="font-semibold mb-2">{feature.title}</h4>
-              <p className="text-sm text-gray-600">{feature.description}</p>
+              <p className="text-sm text-muted-foreground">{feature.description}</p>
             </motion.div>
           ))}
+        </motion.div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Get Started Today
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              Contact Sales
+            </Button>
+          </div>
         </motion.div>
       </div>
     </section>

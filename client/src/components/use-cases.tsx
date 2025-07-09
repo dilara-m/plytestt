@@ -1,5 +1,6 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import { 
   Building, 
   Palette, 
@@ -79,10 +80,10 @@ export default function UseCases() {
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Built for Every Industry
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             From creators to enterprises, Ply powers crowdfunding across industries and use cases.
           </p>
         </motion.div>
@@ -101,8 +102,8 @@ export default function UseCases() {
                 <useCase.icon className={`${useCase.iconColor} w-6 h-6`} />
               </div>
               <h3 className="text-xl font-semibold mb-4">{useCase.title}</h3>
-              <p className="text-gray-600 mb-6">{useCase.description}</p>
-              <ul className="text-sm text-gray-600 space-y-2">
+              <p className="text-muted-foreground mb-6">{useCase.description}</p>
+              <ul className="text-sm text-muted-foreground space-y-2">
                 {useCase.features.map((feature, featureIndex) => (
                   <li key={featureIndex} className="flex items-center">
                     <Check className="w-4 h-4 text-green-500 mr-2" />
@@ -113,6 +114,23 @@ export default function UseCases() {
             </motion.div>
           ))}
         </div>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.6 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Explore Solutions
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              Schedule Demo
+            </Button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );

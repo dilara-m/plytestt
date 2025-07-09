@@ -150,10 +150,10 @@ const campaign = await ply.campaigns.create({
           viewport={{ once: true }}
           className="text-center mb-16"
         >
-          <h2 className="text-3xl md:text-4xl font-bold text-neutral-dark mb-6">
+          <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-6">
             Complete Crowdfunding Ecosystem
           </h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             Everything you need to build, launch, and scale crowdfunding experiences across any platform or use case.
           </p>
         </motion.div>
@@ -175,7 +175,7 @@ const campaign = await ply.campaigns.create({
                 viewport={{ once: true }}
               >
                 <h3 className="text-2xl font-bold mb-6">Language-Agnostic SDK</h3>
-                <p className="text-gray-600 mb-8">
+                <p className="text-muted-foreground mb-8">
                   Build on Ply Network with your preferred programming language. Our comprehensive SDKs provide everything you need to create crowdfunding experiences.
                 </p>
                 
@@ -195,7 +195,7 @@ const campaign = await ply.campaigns.create({
                   ))}
                 </div>
                 
-                <Button className="bg-primary text-white hover:bg-primary/90">
+                <Button className="bg-primary text-primary-foreground hover:bg-primary/90">
                   <Download className="w-4 h-4 mr-2" />
                   Download SDK
                 </Button>
@@ -227,7 +227,7 @@ const campaign = await ply.campaigns.create({
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Meet Your Audience Where They Are</h4>
-                        <p className="text-sm text-gray-600">Instead of driving traffic to separate platforms, launch campaigns directly in Discord servers, Telegram channels, and live streams where your community already exists.</p>
+                        <p className="text-sm text-muted-foreground">Instead of driving traffic to separate platforms, launch campaigns directly in Discord servers, Telegram channels, and live streams where your community already exists.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -236,7 +236,7 @@ const campaign = await ply.campaigns.create({
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Instant Monetization</h4>
-                        <p className="text-sm text-gray-600">Turn any social interaction into a funding opportunity. Streaming? Accept donations live. Discord community? Embed funding widgets directly in channels.</p>
+                        <p className="text-sm text-muted-foreground">Turn any social interaction into a funding opportunity. Streaming? Accept donations live. Discord community? Embed funding widgets directly in channels.</p>
                       </div>
                     </div>
                   </div>
@@ -247,7 +247,7 @@ const campaign = await ply.campaigns.create({
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">Global Reach, Local Feel</h4>
-                        <p className="text-sm text-gray-600">Each plugin maintains the native experience of the platform while connecting to a global backer pool. Your Discord campaign feels like Discord, not a foreign tool.</p>
+                        <p className="text-sm text-muted-foreground">Each plugin maintains the native experience of the platform while connecting to a global backer pool. Your Discord campaign feels like Discord, not a foreign tool.</p>
                       </div>
                     </div>
                     <div className="flex items-start">
@@ -256,7 +256,7 @@ const campaign = await ply.campaigns.create({
                       </div>
                       <div>
                         <h4 className="font-semibold mb-1">No Platform Switching</h4>
-                        <p className="text-sm text-gray-600">Your backers never leave their favorite platforms. They can support you on Telegram, Discord, or your website without creating new accounts or learning new interfaces.</p>
+                        <p className="text-sm text-muted-foreground">Your backers never leave their favorite platforms. They can support you on Telegram, Discord, or your website without creating new accounts or learning new interfaces.</p>
                       </div>
                     </div>
                   </div>
@@ -279,7 +279,7 @@ const campaign = await ply.campaigns.create({
                         <channel.icon className={`${channel.color} w-6 h-6`} />
                       </div>
                       <h4 className="font-semibold mb-2">{channel.name}</h4>
-                      <p className="text-gray-600 text-sm">{channel.description}</p>
+                      <p className="text-muted-foreground text-sm">{channel.description}</p>
                     </CardContent>
                   </Card>
                 </motion.div>
@@ -302,8 +302,8 @@ const campaign = await ply.campaigns.create({
                     <feature.icon className="text-primary w-6 h-6" />
                   </div>
                   <h4 className="text-xl font-semibold mb-4">{feature.title}</h4>
-                  <p className="text-gray-600 mb-6">{feature.description}</p>
-                  <ul className="text-sm text-gray-600 space-y-2">
+                  <p className="text-muted-foreground mb-6">{feature.description}</p>
+                  <ul className="text-sm text-muted-foreground space-y-2">
                     {feature.features.map((item, idx) => (
                       <li key={idx} className="flex items-center">
                         <Check className="w-4 h-4 text-green-500 mr-2" />
@@ -332,7 +332,7 @@ const campaign = await ply.campaigns.create({
                         <app.icon className={`${app.color} w-6 h-6`} />
                       </div>
                       <h4 className="font-semibold mb-2">{app.name}</h4>
-                      <p className="text-gray-600 text-sm mb-4">{app.description}</p>
+                      <p className="text-muted-foreground text-sm mb-4">{app.description}</p>
                       <Badge className={`text-xs ${app.badgeColor}`}>{app.category}</Badge>
                     </CardContent>
                   </Card>
@@ -341,6 +341,23 @@ const campaign = await ply.campaigns.create({
             </div>
           </TabsContent>
         </Tabs>
+        
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6, delay: 0.4 }}
+          viewport={{ once: true }}
+          className="text-center mt-16"
+        >
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90">
+              Start Building
+            </Button>
+            <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary hover:text-primary-foreground">
+              View Documentation
+            </Button>
+          </div>
+        </motion.div>
       </div>
     </section>
   );
