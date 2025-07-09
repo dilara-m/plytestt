@@ -1,0 +1,40 @@
+Products and offerings
+SDK in major languages
+APIs
+Example frontend client based on the SDK.
+Low level reference frontend client.
+AI-based moderation of campaigns.
+Distribution channels: widget, bot, and mini-app provided. Take rate and fee spliting can be modified, so curators and moderators will get their cut directly. No need for conversion and referral tracking.
+Telegram
+Discord
+Streaming bot
+Shopping cart (samcart like experience)
+Shopify widget
+AI campaign creator (using something like Gamma API)
+For specific use cases, such as creating campaigns based on one’s inventory.
+With human proof (such as Self), humans can utilize AI campaign creator, one campaign at a time, to stop spam and bot attacks.
+AI saves the image of a user, and sends them monthly recommendations from brands with automatic try on pictures and 3D models.
+AI creator / AI Agents
+Interesting concepts can be turned into apps (built on top of the protocol).
+For example, learning quiz app (parents subscribe to the app that charges them every month, AI generates quiz, children complete and get paid).
+AI agents requiring crowdfunding to do something. What are some examples in this bucket?
+AI agents with investment DAOs? Maybe connect with cBORG platform with a particular take rate. 
+However, what does Ply provide that cBORG needs? Probably unique audience? More brainstorm needed.
+DAOs that decide which projects to fund.
+Are there platforms that are already doing this?
+
+Why platforms should use our SDK and tech stack?
+Many crowdfunding platforms cannot afford devs, we are your dev team because we improve and maintain this product. Using our SDK means you (a platform) have less code to worry about, (and reduce your dev team significantly, although we may not want to mention this directly?).
+Latest tech: many crowdfunding platforms are built on legacy tech, and want to overhaul their system and rebuild.
+Anyone can create a crowdfunding app or capture a crowdfunding behavior within their system of choice (eg telegram, discord etc.)
+We have an open source business model. Pay for advanced features but the core tech will always be free and available.
+
+Why should Creators care?
+In the world we envision, creators aren’t limited to platforms or borders. They technically will have a global audience and backer pool, and extended visibility.
+In the world we envision, platforms aren’t gatekeepers but are curators and moderators for good projects, and get paid curating projects for their communities. No more moving between different platforms to cater to different audiences.
+token economy.
+
+Why should backers care?
+More projects to choose from, better chance to support projects they care about.
+reputation: creator reputation and ratings across all platforms will provide better signal on which projects/creators to trust.
+token economy.

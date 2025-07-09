@@ -1,6 +1,7 @@
 import Navigation from "@/components/navigation";
 import Hero from "@/components/hero";
 import ProblemStatement from "@/components/problem-statement";
+import ValueProposition from "@/components/value-proposition";
 import ProductShowcase from "@/components/product-showcase";
 import Pricing from "@/components/pricing";
 import UseCases from "@/components/use-cases";
@@ -14,6 +15,7 @@ export default function Home() {
       <Navigation />
       <Hero />
       <ProblemStatement />
+      <ValueProposition />
       <ProductShowcase />
       <Pricing />
       <UseCases />

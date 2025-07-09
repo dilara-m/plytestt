@@ -29,7 +29,7 @@ export default function Navigation() {
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
               <Layers3 className="text-primary text-2xl mr-3" />
-              <span className="text-xl font-bold text-neutral-dark">Ply Network</span>
+              <span className="text-xl font-bold text-neutral-dark">Ply</span>
             </div>
           </div>
           
