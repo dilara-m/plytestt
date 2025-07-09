@@ -69,7 +69,7 @@ export default function ProductShowcase() {
     {
       icon: Box,
       name: "Embeddable Widget",
-      description: "Lightweight widget for any website with customizable fee splitting.",
+      description: "Lightweight widget for any website with customizable fee splitting and curator payments.",
       color: "text-cyan-600",
       bgColor: "bg-cyan-100",
     },
@@ -79,7 +79,7 @@ export default function ProductShowcase() {
     {
       icon: GraduationCap,
       name: "Learning Quiz App",
-      description: "AI-generated educational content with subscription-based funding and reward systems.",
+      description: "Parents subscribe monthly, AI generates quizzes, children complete them and get paid. Built on Ply protocol.",
       category: "Education",
       color: "text-blue-600",
       bgColor: "bg-blue-100",
@@ -88,7 +88,7 @@ export default function ProductShowcase() {
     {
       icon: Bot,
       name: "AI Agent Funding",
-      description: "Crowdfund AI agents for specific tasks and projects with automated execution.",
+      description: "Crowdfund AI agents for specific tasks and projects. Connect with investment DAOs for automated execution.",
       category: "AI/ML",
       color: "text-purple-600",
       bgColor: "bg-purple-100",
@@ -97,7 +97,7 @@ export default function ProductShowcase() {
     {
       icon: Users,
       name: "Investment DAOs",
-      description: "Decentralized funding decisions with automated distribution and governance.",
+      description: "Decentralized funding decisions with automated distribution. DAOs decide which projects to fund.",
       category: "DeFi",
       color: "text-green-600",
       bgColor: "bg-green-100",
@@ -116,8 +116,8 @@ export default function ProductShowcase() {
     {
       icon: Wand2,
       title: "AI Campaign Creator",
-      description: "Generate compelling campaigns from inventory or ideas using advanced AI, with human verification to prevent abuse.",
-      features: ["Inventory-based campaigns", "Personalized recommendations", "3D model generation"],
+      description: "Generate campaigns from inventory using Gamma API integration. Human verification with Self prevents spam and bot attacks.",
+      features: ["Inventory-based campaigns", "Monthly recommendations with try-on", "3D model generation", "One campaign per human limit"],
       gradient: "from-primary/10 to-secondary/10",
     },
   ];

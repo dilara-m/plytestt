@@ -38,7 +38,7 @@ export default function Hero() {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-xl text-gray-600 mb-8 max-w-3xl mx-auto"
           >
-            Ply Network provides the complete ecosystem for modern crowdfunding. From SDKs and APIs to AI-powered moderation and distribution channels, we're solving the capital challenge of tomorrow's work.
+            Open-source crowdfunding infrastructure that empowers platforms, creators, and backers. Build on the latest tech stack with global reach, AI-powered tools, and customizable fee structures.
           </motion.p>
           
           <motion.div

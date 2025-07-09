@@ -1,10 +1,12 @@
-# Replit.md - Ply Network Crowdfunding Platform
+# Replit.md - Ply Crowdfunding Platform
 
 ## Overview
-This is a full-stack crowdfunding platform built with React (frontend) and Express.js (backend). The application uses a modern tech stack including TypeScript, Tailwind CSS, shadcn/ui components, and Drizzle ORM with PostgreSQL database. It's designed to showcase a crowdfunding infrastructure platform called "Ply Network" with comprehensive landing page sections, contact forms, and API endpoints.
+This is a full-stack crowdfunding platform built with React (frontend) and Express.js (backend). The application uses a modern tech stack including TypeScript, Tailwind CSS, shadcn/ui components, and Drizzle ORM with PostgreSQL database. It's designed to showcase a crowdfunding infrastructure platform called "Ply" (domain: ply.network) with comprehensive landing page sections, contact forms, and API endpoints.
 
 ## User Preferences
 Preferred communication style: Simple, everyday language.
+Branding: Company name is "Ply" (not "Ply Network")
+Domain: ply.network
 
 ## System Architecture
 The application follows a monorepo structure with clear separation between client and server code:
@@ -62,3 +64,32 @@ The application follows a monorepo structure with clear separation between clien
 - **Static Assets**: Frontend assets served from the built directory
 
 The application is designed to be easily deployable on platforms like Replit, with development and production configurations clearly separated. The storage layer is abstracted to allow for easy switching between in-memory storage (development) and database storage (production).
+
+## Key Value Propositions
+
+### For Platforms
+- Reduce development team costs by using Ply as your dev team
+- Modernize legacy crowdfunding tech with latest tech stack
+- Open-source core with paid advanced features
+- Global reach without platform limitations
+
+### For Creators
+- Access global audience and backer pool
+- Cross-platform visibility and reach
+- Platforms become curators, not gatekeepers
+- Unified reputation system across all platforms
+
+### For Backers
+- Access to more diverse projects
+- Better trust signals and creator reputation
+- Enhanced rating systems across platforms
+- Global project discovery
+
+## Recent Changes (January 2025)
+- Updated branding from "Ply Network" to "Ply" throughout the application
+- Added comprehensive value proposition section explaining benefits for platforms, creators, and backers
+- Enhanced product showcase with specific AI features including Gamma API integration
+- Updated ecosystem apps to reflect learning quiz app, AI agent funding, and investment DAOs
+- Improved distribution channels descriptions with curator payment features
+- Fixed import errors for react-icons (SiTwitter to SiX)
+- Added human verification features for AI campaign creator to prevent spam

@@ -83,7 +83,7 @@ export default function UseCases() {
             Built for Every Industry
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            From creators to enterprises, Ply Network powers crowdfunding across industries and use cases.
+            From creators to enterprises, Ply powers crowdfunding across industries and use cases.
           </p>
         </motion.div>
         

@@ -22,7 +22,7 @@ export default function CallToAction() {
             Ready to Build the Future of Work?
           </h2>
           <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
-            Join thousands of developers and businesses using Ply Network to create innovative crowdfunding experiences.
+            Join thousands of developers and businesses using Ply to create innovative crowdfunding experiences.
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
