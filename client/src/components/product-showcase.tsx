@@ -15,7 +15,10 @@ import {
   GraduationCap, 
   Bot, 
   Users,
-  Check
+  Check,
+  DollarSign,
+  Globe,
+  Clock
 } from "lucide-react";
 import { SiGo, SiPython, SiRuby, SiNodedotjs, SiTelegram, SiDiscord, SiShopify } from "react-icons/si";
 import { motion } from "framer-motion";
@@ -213,6 +216,54 @@ const campaign = await ply.campaigns.create({
           </TabsContent>
           
           <TabsContent value="channels">
+            <div className="mb-12">
+              <div className="bg-gradient-to-r from-purple-50 to-pink-50 p-8 rounded-xl mb-8">
+                <h3 className="text-2xl font-bold text-center mb-6">How Creators Benefit from Our Plugins</h3>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                        <Users className="w-4 h-4 text-purple-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-1">Meet Your Audience Where They Are</h4>
+                        <p className="text-sm text-gray-600">Instead of driving traffic to separate platforms, launch campaigns directly in Discord servers, Telegram channels, and live streams where your community already exists.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                        <DollarSign className="w-4 h-4 text-purple-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-1">Instant Monetization</h4>
+                        <p className="text-sm text-gray-600">Turn any social interaction into a funding opportunity. Streaming? Accept donations live. Discord community? Embed funding widgets directly in channels.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div className="space-y-4">
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                        <Globe className="w-4 h-4 text-purple-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-1">Global Reach, Local Feel</h4>
+                        <p className="text-sm text-gray-600">Each plugin maintains the native experience of the platform while connecting to a global backer pool. Your Discord campaign feels like Discord, not a foreign tool.</p>
+                      </div>
+                    </div>
+                    <div className="flex items-start">
+                      <div className="w-8 h-8 bg-purple-100 rounded-full flex items-center justify-center mr-3 mt-1">
+                        <Clock className="w-4 h-4 text-purple-600" />
+                      </div>
+                      <div>
+                        <h4 className="font-semibold mb-1">No Platform Switching</h4>
+                        <p className="text-sm text-gray-600">Your backers never leave their favorite platforms. They can support you on Telegram, Discord, or your website without creating new accounts or learning new interfaces.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
               {distributionChannels.map((channel, index) => (
                 <motion.div
